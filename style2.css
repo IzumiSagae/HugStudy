@@ -1,0 +1,147 @@
+/* [2]DIV PUZZLE */
+body{
+    min-height: 100%;
+    height: 100%;
+}
+.clearfix::after{
+    /* clearfix=補助クラスその１ */
+    content: '';
+    display: block;
+    clear: both;
+}
+.wrapper{
+    width:400px;
+    margin:0 auto;
+}
+.bg-white{
+    /* bg-white=補助クラスその２　背景を白にする */
+    background-color: #fff;
+}
+.header{
+    height: 100px;
+    background-color:#FFCE7a;
+}
+
+.side{
+    float:left;
+    height:250px;
+    width:150px;
+    background-color:#9DDDF4;
+}
+
+.content-top-left{
+    float:left;
+    width:150px;
+    height:150px;
+}
+
+.content-top-left-top{
+    height:50px;
+    background-color:#C2FFC8;
+}
+
+.content-top-left-bottom{
+    height:100px;
+    background-color:#FFC2C5;
+}
+
+
+.content-top-right{
+     float:right;
+     height:150px;
+     width:100px;
+     background-color:#F89C9C;
+}
+
+.content-bottom{
+     float:right;
+     height:100px;
+     width:250px;
+     background-color:#FFF083;
+}
+
+
+.footer{
+    height: 100px;
+    background-color:#BEA5FF;
+}
+
+.clearfix:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+/* reset.css */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+@media screen and (max-width:767px){
+    .wrapper{
+        width: 300px ;
+    }
+
+     .header{
+        width: 300px;
+     }
+
+     .side{
+        width: 100px;
+     }
+
+    .content-top-left{
+        width: 125px;
+        float: left;
+     }
+
+     .content-top-right{
+        width: 75px;
+        float: right;
+
+     }  
+
+     .content-bottom{
+        width: 200px;
+        float: left;     
+     }
+
+    .footer{
+        width: 300px;
+
+    }
+}
+
+@media screen and (max-width:479px){
+    .wrapper{
+        width: 150px ;
+    }
+
+     .header{
+        width: 150px;
+     }
+
+     .side{
+        width: 150px;
+        height: 100px;
+     }
+
+     .content-top-right{
+        width: 150px;
+        height: 100px;
+     }  
+
+    .content-top-left{
+        width: 150px;
+     }
+
+     .content-bottom{
+        width: 150px;     
+     }
+
+    .footer{
+        width: 150px;
+
+    }
+}
